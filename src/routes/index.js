@@ -21,7 +21,7 @@ const privateRoute = express.Router()
 privateRoute.use(verifyToken)
 
 app.post('/authenticate', (req, res) => {
-  console.log(req.body)
+  // console.log(req.body)
   loginValidation(req.body.login, req.body.password, res)
 })
 
@@ -30,12 +30,12 @@ app.post('/user', (req, res) => {
 })
 
 privateRoute.get('/user', (req, res) => {
-  console.log(req.userId)
+  // console.log(req.userId)
   getUser(req, res)
 })
 
 privateRoute.get('/users', (req, res) => {
-  console.log(req.userId)
+  // console.log(req.userId)
   getUsers(req, res)
 })
 
