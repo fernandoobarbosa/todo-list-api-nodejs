@@ -4,7 +4,7 @@
   "description": "webappproject",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
+    "start": "babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fernando Barbosa",
@@ -25,6 +25,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.10",
     "mongoose-unique-validator": "^2.0.3",
+    "node": "^16.0.0",
     "object-hash": "^2.1.1",
     "standard": "^16.0.3"
   }
